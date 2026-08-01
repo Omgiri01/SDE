@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./BackEnd
+      dockerfile: Dockerfile
+    container_name: ai_code_reviewer_backend
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - GEMINI_KEY=${GEMINI_KEY}
+
+  frontend:
+    build:
+      context: ./Frontend
+      dockerfile: Dockerfile
+    container_name: ai_code_reviewer_frontend
+    restart: always
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend

@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:latest
+    container_name: erp_mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: erp_crm_db
+    volumes:
+      - mongo_data:/data/db
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: erp_backend
+    restart: always
+    ports:
+      - "8888:8888"
+    environment:
+      - PORT=8888
+      - MONGO_URI=mongodb://mongo:27017/erp_crm_db
+      - JWT_SECRET=supersecret_omgiri_key_2026
+    depends_on:
+      - mongo
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: erp_frontend
+    restart: always
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+volumes:
+  mongo_data:
