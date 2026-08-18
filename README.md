@@ -9,10 +9,10 @@ Welcome to my Software Development Engineering (SDE) repository. This portfolio 
 
 ## 🛠️ Featured Projects
 
-### 1. ⚙️ PhysiTwin-FEA: Multi-Physics PINN Digital Twin for Material Fracture & FEA Stress
-*📁 Location: [`./pinn-fea-digital-twin`](./pinn-fea-digital-twin)*
+### 1. ⚙️ PhysiTwin: Multi-Physics PINN Digital Twin for Material Fracture & FEA Stress
+*📁 Location: [`./PhysiTwin`](./PhysiTwin)*
 
-An advanced engineering software platform combining solid mechanics (LEFM, EPFM, XFEM), PyTorch Physics-Informed Neural Networks (PINNs), FastAPI microservices, and an interactive React/Three.js 3D stress visualization interface.
+An advanced engineering software platform combining solid mechanics (LEFM, EPFM, XFEM, Peridynamics), PyTorch Physics-Informed Neural Networks (PINNs), FastAPI microservices, and an interactive React/Three.js 3D stress visualization interface.
 - **Key Features**: Navier-Cauchy momentum PDE loss functions, 100x accelerated stress field inference, Abaqus/CalculiX `.vtk` mesh parsing, live 3D stress contour shaders.
 - **Tech Stack**: Python 3.10+, PyTorch, FastAPI, PyVista, React 18, Three.js, WebGL, Docker.
 
@@ -41,8 +41,8 @@ An AI-driven developer tool that analyzes code snippets and pull requests for se
 Each project contains dedicated Docker configurations:
 
 ```bash
-# To run PhysiTwin-FEA:
-cd pinn-fea-digital-twin
+# To run PhysiTwin:
+cd PhysiTwin
 docker-compose up --build -d
 
 # To run Enterprise ERP & CRM:
