@@ -1,22 +1,20 @@
-# Software Development Engineering (SDE) & Full-Stack AI Portfolio
+# Software Development Engineering (SDE) & Multi-Disciplinary Portfolio
 
 [![Author](https://img.shields.io/badge/Author-Om%20Giri-blue.svg)](#author)
-[![Stack](https://img.shields.io/badge/Stack-MERN%20%7C%20PyTorch%20%7C%20PINNs%20%7C%20Docker-green)](#featured-projects)
+[![Stack](https://img.shields.io/badge/Stack-Physics--ML%20%7C%20MERN%20%7C%20Docker%20%7C%20AI-green)](#featured-projects)
 
-Welcome to my Software Development Engineering (SDE) repository. This portfolio features production-grade full-stack web applications, Physics-Informed AI integrations, multi-tenant SaaS systems, and containerized microservices built with modern web and machine learning stacks.
-
-Created and maintained by **Om Giri**.
+Welcome to my Software Development Engineering (SDE) repository. This portfolio features production-grade full-stack web applications, Physics-Informed AI digital twins, containerized microservices, and modern web software applications built by **Om Giri**.
 
 ---
 
 ## 🛠️ Featured Projects
 
-### 1. 🔬 PINN-FEA-DigitalTwin: Physics-Informed Neural Network for FEA & Stress Analysis
+### 1. ⚙️ PhysiTwin-FEA: Multi-Physics PINN Digital Twin for Material Fracture & FEA Stress
 *📁 Location: [`./pinn-fea-digital-twin`](./pinn-fea-digital-twin)*
 
-A multi-physics digital twin platform that predicts structural stress field distributions ($\sigma_{xx}, \sigma_{yy}, \tau_{xy}$) and Von Mises yield invariants ($\sigma_{vm}$) on finite element meshes using PyTorch PINNs.
-- **Key Features**: Physics-Informed momentum equilibrium loss functions ($\nabla \cdot \boldsymbol{\sigma} + \mathbf{b} = 0$), VTK/Abaqus mesh processing, real-time 3D WebGL stress heatmap shaders, async WebSockets streaming.
-- **Tech Stack**: Python, PyTorch (PINNs), PyVista, FastAPI, React 18, Three.js (`@react-three/fiber`), WebGL, Docker.
+An advanced engineering software platform combining solid mechanics (LEFM, EPFM, XFEM), PyTorch Physics-Informed Neural Networks (PINNs), FastAPI microservices, and an interactive React/Three.js 3D stress visualization interface.
+- **Key Features**: Navier-Cauchy momentum PDE loss functions, 100x accelerated stress field inference, Abaqus/CalculiX `.vtk` mesh parsing, live 3D stress contour shaders.
+- **Tech Stack**: Python 3.10+, PyTorch, FastAPI, PyVista, React 18, Three.js, WebGL, Docker.
 
 ---
 
@@ -38,21 +36,21 @@ An AI-driven developer tool that analyzes code snippets and pull requests for se
 
 ---
 
-## 🐳 Running Projects with Docker
+## 🐳 Docker Setup
 
-Each project contains a dedicated `docker-compose.yml` configuration:
+Each project contains dedicated Docker configurations:
 
 ```bash
-# To run PINN FEA Digital Twin:
+# To run PhysiTwin-FEA:
 cd pinn-fea-digital-twin
 docker-compose up --build -d
 
 # To run Enterprise ERP & CRM:
-cd ../enterprise-erp-crm
+cd enterprise-erp-crm
 docker-compose up --build -d
 
 # To run AI Code Reviewer:
-cd ../ai-code-reviewer
+cd ai-code-reviewer
 docker-compose up --build -d
 ```
 
@@ -61,5 +59,5 @@ docker-compose up --build -d
 ## 👤 Author
 
 **Om Giri**  
-*Full-Stack Software Development Engineer & Physics-ML Specialist*  
+*Software Development Engineer | Multiscale Mechanics & AI Specialist*  
 GitHub: [@Omgiri01](https://github.com/Omgiri01)
