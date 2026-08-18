@@ -19,20 +19,35 @@ PhysiTwin integrates four key branches of solid and fracture mechanics into a un
 
 ### 1. Linear Elastic Fracture Mechanics (LEFM) & Paris Law
 Evaluates stress intensity factors ($K_I$, $K_{II}$, $K_{III}$) around crack tips and models subcritical fatigue crack growth rate:
-$$\frac{da}{dN} = C (\Delta K)^m$$
-$$\Delta K = Y \Delta \sigma \sqrt{\pi a}$$
+
+$$
+\frac{da}{dN} = C (\Delta K)^m
+$$
+
+$$
+\Delta K = Y \Delta \sigma \sqrt{\pi a}
+$$
 
 ### 2. Elastic-Plastic Fracture Mechanics (EPFM) & J-Integral
 For ductile materials undergoing non-linear plastic deformation, computes path-independent J-Integrals and Crack Tip Opening Displacement (CTOD):
-$$J = \int_{\Gamma} \left( W dy - T_i \frac{\partial u_i}{\partial x} ds \right)$$
+
+$$
+J = \int_{\Gamma} \left( W dy - T_i \frac{\partial u_i}{\partial x} ds \right)
+$$
 
 ### 3. eXtended Finite Element Method (XFEM)
-Enriches standard FEA shape functions with Heaviside jump functions and crack-tip asymptotic functions to model arbitrary crack growth independent of mesh boundaries:
-$$\mathbf{u}(\mathbf{x}) = \sum_{i \in I} N_i(\mathbf{x}) \mathbf{u}_i + \sum_{j \in J} N_j(\mathbf{x}) H(\mathbf{x}) \mathbf{a}_j + \sum_{k \in K} N_k(\mathbf{x}) \sum_{l=1}^4 F_l(\mathbf{x}) \mathbf{b}_k^l$$
+Enriches standard FEA shape functions with Heaviside jump functions $H(\mathbf{x})$ and crack-tip asymptotic functions $F_l(\mathbf{x})$ to model arbitrary crack growth independent of mesh boundaries:
+
+$$
+\mathbf{u}(\mathbf{x}) = \sum_{i \in I} N_i(\mathbf{x}) \mathbf{u}_i + \sum_{j \in J} N_j(\mathbf{x}) H(\mathbf{x}) \mathbf{a}_j + \sum_{k \in K} N_k(\mathbf{x}) \sum_{l=1}^4 F_l(\mathbf{x}) \mathbf{b}_k^l
+$$
 
 ### 4. Non-Local Peridynamics
 Models discontinuous damage mechanics without spatial derivative singularities by reformulating momentum equations into integral equations over a horizon domain $\mathcal{H}_{\mathbf{x}}$:
-$$\rho \ddot{\mathbf{u}}(\mathbf{x}, t) = \int_{\mathcal{H}_{\mathbf{x}}} \mathbf{f}\left( \mathbf{u}(\mathbf{x}', t) - \mathbf{u}(\mathbf{x}, t), \mathbf{x}' - \mathbf{x} \right) dV_{\mathbf{x}'} + \mathbf{b}(\mathbf{x}, t)$$
+
+$$
+\rho \ddot{\mathbf{u}}(\mathbf{x}, t) = \int_{\mathcal{H}_{\mathbf{x}}} \mathbf{f}\left( \mathbf{u}(\mathbf{x}', t) - \mathbf{u}(\mathbf{x}, t), \mathbf{x}' - \mathbf{x} \right) dV_{\mathbf{x}'} + \mathbf{b}(\mathbf{x}, t)
+$$
 
 ---
 
@@ -42,12 +57,20 @@ PhysiTwin implements a PyTorch Physics-Informed Neural Network architecture to a
 
 ### Governing PDE Loss Function
 The network minimizes a multi-objective loss combining observational FEA data with Navier-Cauchy static momentum equilibrium equations:
-$$\mathcal{L}_{\text{total}} = \mathcal{L}_{\text{data}} + \lambda_{\text{pde}} \mathcal{L}_{\text{pde}} + \lambda_{\text{bc}} \mathcal{L}_{\text{bc}}$$
 
-$$\mathcal{L}_{\text{pde}} = \frac{1}{N_{\text{coll}}} \sum_{i=1}^{N_{\text{coll}}} \left\| \nabla \cdot \boldsymbol{\sigma}(\mathbf{x}_i) + \mathbf{b}(\mathbf{x}_i) \right\|^2$$
+$$
+\mathcal{L}_{\text{total}} = \mathcal{L}_{\text{data}} + \lambda_{\text{pde}} \mathcal{L}_{\text{pde}} + \lambda_{\text{bc}} \mathcal{L}_{\text{bc}}
+$$
+
+$$
+\mathcal{L}_{\text{pde}} = \frac{1}{N_{\text{coll}}} \sum_{i=1}^{N_{\text{coll}}} \left\| \nabla \cdot \boldsymbol{\sigma}(\mathbf{x}_i) + \mathbf{b}(\mathbf{x}_i) \right\|^2
+$$
 
 where the Cauchy stress tensor $\boldsymbol{\sigma}$ is enforced via linear elastic constitutive laws:
-$$\boldsymbol{\sigma} = \lambda \text{tr}(\boldsymbol{\varepsilon}) \mathbf{I} + 2\mu \boldsymbol{\varepsilon}, \quad \boldsymbol{\varepsilon} = \frac{1}{2}\left( \nabla \mathbf{u} + (\nabla \mathbf{u})^T \right)$$
+
+$$
+\boldsymbol{\sigma} = \lambda \text{tr}(\boldsymbol{\varepsilon}) \mathbf{I} + 2\mu \boldsymbol{\varepsilon}, \quad \boldsymbol{\varepsilon} = \frac{1}{2}\left( \nabla \mathbf{u} + (\nabla \mathbf{u})^T \right)
+$$
 
 ---
 
