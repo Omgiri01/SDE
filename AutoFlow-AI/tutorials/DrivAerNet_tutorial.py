@@ -29,8 +29,9 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
 
+import os
 # Load the dataset
-file_path = '../AeroCoefficients_DrivAerNet_FilteredCorrected.csv'
+file_path = os.path.join(os.path.dirname(__file__), '..', 'ParametricModels', 'DrivAerNet_ParametricData.csv')
 data = pd.read_csv(file_path)
 
 # Set the aesthetic style of the plots
