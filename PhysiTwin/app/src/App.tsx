@@ -1,4 +1,4 @@
-// FRACTUREVERSE Part 3 shell. Twelve features, one sidebar, no router dependency.
+// PhysiTwin: Multi-Physics PINN Digital Twin Platform by Om Giri
 import { motion } from "framer-motion";
 import { useState } from "react";
 import type { Capabilities } from "./data";
@@ -16,8 +16,8 @@ function Overview({ caps }: { caps: Capabilities }) {
 
   return (
     <Section
-      title="FRACTUREVERSE"
-      eyebrow="Multi physics fracture propagation digital twin"
+      title="PhysiTwin"
+      eyebrow="Multi-Physics PINN Digital Twin Platform by Om Giri"
       claim={
         <>
           Four fracture theories on one material database, one unit convention and one
@@ -371,8 +371,8 @@ export default function App() {
     <div className="app">
       <aside className="sidebar">
         <div className="brand">
-          FRACTUREVERSE
-          <small>Four theories, three domains, one validated stack.</small>
+          PHYSITWIN
+          <small>Multi-Physics PINN Digital Twin Platform by Om Giri</small>
           <small data-testid="app-mode">
             {dataMode === undefined
               ? "checking for the solver service"
