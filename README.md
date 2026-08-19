@@ -1,9 +1,9 @@
 # Software Development Engineering (SDE) & Multi-Disciplinary Portfolio
 
 [![Author](https://img.shields.io/badge/Author-Om%20Giri-blue.svg)](#author)
-[![Stack](https://img.shields.io/badge/Stack-Physics--AI%20%7C%20Aerospace%20%7C%20Automotive%20%7C%20MERN-green)](#featured-projects)
+[![Stack](https://img.shields.io/badge/Stack-Physics--AI%20%7C%20MERN%20%7C%20Docker%20%7C%20Three.js-green)](#featured-projects)
 
-Welcome to my Software Development Engineering (SDE) portfolio repository. This portfolio features production-grade engineering software, Physics-Informed AI digital twins, Aerospace & Automotive Neural-CFD simulation engines, and full-stack web applications developed by **Om Giri**.
+Welcome to my Software Development Engineering (SDE) portfolio repository. This portfolio features production-grade engineering software, Physics-Informed AI digital twins, and full-stack web applications developed by **Om Giri**.
 
 ---
 
@@ -17,23 +17,7 @@ Welcome to my Software Development Engineering (SDE) portfolio repository. This 
 
 ---
 
-### 2. 🚀 AeroTwin-AI: Autonomous Micro-Turbojet & Airfoil Neural-CFD Platform
-*📁 Location: [`./AeroTwin-AI`](./AeroTwin-AI)*
-- **Domain**: Aerospace Engineering, Brayton Cycle Thermodynamics, Gas Turbine Propulsion.
-- **Key Features**: Parametric 3D blade lofting, RANS-CFD neural surrogate models for sub-40ms pressure ($C_p$) and drag ($C_D$) evaluation, interactive Three.js 3D engine flow visualizer.
-- **Tech Stack**: Python, PyTorch, OpenFOAM/SU2, Three.js, WebGL, Streamlit/FastAPI.
-
----
-
-### 3. 🏎️ AutoFlow-AI: 3D Vehicle Aerodynamics & Geometric Deep Learning CFD
-*📁 Location: [`./AutoFlow-AI`](./AutoFlow-AI)*
-- **Domain**: Automotive Engineering, Aerodynamics, Vehicle Drag & Wake Flow.
-- **Key Features**: 3D Graph Neural Networks (GNNs / RegDGCNN) ingesting vehicle surface meshes (STL/OBJ) to predict surface pressure fields and drag coefficients ($C_D$) in 120ms.
-- **Tech Stack**: Python 3.10+, PyTorch Geometric, OpenFOAM CFD datasets, PyVista, Docker.
-
----
-
-### 4. 🏢 Enterprise MERN ERP & CRM Platform
+### 2. 🏢 Enterprise MERN ERP & CRM Platform
 *📁 Location: [`./enterprise-erp-crm`](./enterprise-erp-crm)*
 - **Domain**: Full-Stack SaaS, Multi-Tenancy, Enterprise Resource Planning.
 - **Key Features**: Automated invoice & quote management, customer CRM pipeline, payment tracking, automated PDF generation, RBAC security.
@@ -41,7 +25,7 @@ Welcome to my Software Development Engineering (SDE) portfolio repository. This 
 
 ---
 
-### 5. 🤖 AI-Powered Code Reviewer & PR Security Inspector
+### 3. 🤖 AI-Powered Code Reviewer & PR Security Inspector
 *📁 Location: [`./ai-code-reviewer`](./ai-code-reviewer)*
 - **Domain**: Developer Tooling, Generative AI, Static Code Analysis.
 - **Key Features**: Real-time code analysis with Google Gemini AI API, live code editor, Markdown feedback rendering, containerized deployment.
@@ -52,5 +36,5 @@ Welcome to my Software Development Engineering (SDE) portfolio repository. This 
 ## 👤 Author
 
 **Om Giri**  
-*Software Development Engineer | Multiscale Mechanics, Aerospace/Automotive Physics & AI Specialist*  
+*Software Development Engineer | Multiscale Mechanics & AI Specialist*  
 GitHub: [@Omgiri01](https://github.com/Omgiri01)
