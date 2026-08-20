@@ -1,0 +1,15 @@
+# Data ingestion
+websocket-client==1.7.0
+kafka-python==2.0.2
+
+# Utilities
+python-dotenv==1.0.0
+orjson==3.9.15          # Fast JSON serialization (important for high-throughput tick data)
+structlog==24.1.0        # Structured logging - standard in production systems
+
+# Phase 2+ (install now so environment is ready)
+psycopg2-binary==2.9.9
+redis==5.0.1
+sqlalchemy==2.0.29
+pandas==2.2.1
+numpy==1.26.4
