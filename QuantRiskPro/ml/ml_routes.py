@@ -58,26 +58,16 @@ def _get_ohlcv(ticker: str, n_days: int = 400) -> np.ndarray:
     return ohlcv
 
 
-# ── Training Endpoint ──────────────────────────────────────────────────────────
-
-@router.post("/train")
-async def train_all_models(tickers: Optional[List[str]] = None):
-    """
-    Train all 5 AI/ML models on historical data.
-    In production this uses TimescaleDB; in demo mode uses synthetic GBM data.
-    Takes ~30-60 seconds for all tickers.
-    """
+def _sync_train(target_tickers):
     global models_trained, sentiment_model
-    target_tickers = tickers or TICKERS[:4]  # Default to 4 for speed
-
     results = {}
     for ticker in target_tickers:
-        ohlcv = _get_ohlcv(ticker, n_days=400)
+        ohlcv = _get_ohlcv(ticker, n_days=300)
         prices = ohlcv[:, 3]
 
-        # 1. LSTM
+        # 1. LSTM (15 epochs for rapid responsive demo)
         lstm = PriceForecasterService()
-        lstm_result = lstm.train(ohlcv, epochs=30)
+        lstm_result = lstm.train(ohlcv, epochs=15)
         lstm_models[ticker] = lstm
 
         # 2. HMM Regime
@@ -86,7 +76,7 @@ async def train_all_models(tickers: Optional[List[str]] = None):
         regime_models[ticker] = regime
 
         # 3. Isolation Forest
-        anomaly = AnomalyDetector(contamination=0.02)
+        anomaly = AnomalyDetector(contamination=0.02, n_estimators=50)
         anomaly_result = anomaly.fit(ohlcv)
         anomaly_models[ticker] = anomaly
 
@@ -103,11 +93,23 @@ async def train_all_models(tickers: Optional[List[str]] = None):
         }
 
     # 5. Sentiment (shared model)
-    sentiment_model = SentimentAnalyzer(use_finbert=False)  # keyword mode for speed
+    sentiment_model = SentimentAnalyzer(use_finbert=False)
     sentiment_model.load()
 
     training_results.update(results)
     models_trained = True
+    return results
+
+
+@router.post("/train")
+async def train_all_models(tickers: Optional[List[str]] = None):
+    """
+    Train all 5 AI/ML models on historical data.
+    Runs in a worker thread via asyncio.to_thread so the event loop stays 100% responsive.
+    """
+    import asyncio
+    target_tickers = tickers or TICKERS[:4]
+    results = await asyncio.to_thread(_sync_train, target_tickers)
 
     return {
         "status": "all models trained",

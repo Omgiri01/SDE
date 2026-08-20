@@ -67,7 +67,7 @@ class SentimentAnalyzer:
     Falls back to keyword-based scoring if transformers not available.
     """
 
-    def __init__(self, use_finbert: bool = True):
+    def __init__(self, use_finbert: bool = False):
         self.pipeline = None
         self.model_name = "ProsusAI/finbert"
         self.is_loaded = False
