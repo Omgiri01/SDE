@@ -264,9 +264,9 @@ app.add_middleware(
 try:
     from ml.ml_routes import router as ml_router
     app.include_router(ml_router)
-    print("✅ AI/ML routes mounted at /api/ml/*")
+    print("[OK] AI/ML routes mounted at /api/ml/*")
 except Exception as e:
-    print(f"⚠️  ML routes skipped: {e}")
+    print(f"[WARN] ML routes skipped: {e}")
 
 
 # ── REST Endpoints ─────────────────────────────────────────────────────────────

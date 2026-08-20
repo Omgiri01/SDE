@@ -219,44 +219,44 @@
       {
         "a_over_b": 0.3,
         "a_mm": 15.0,
-        "K_I_xfem": 22.886723434525436,
+        "K_I_xfem": 22.886723434525866,
         "K_I_analytical": 22.9974733277914,
-        "error_percent": -0.48157417855172946,
-        "K_II_xfem": -0.0020169409930167366,
+        "error_percent": -0.48157417854986023,
+        "K_II_xfem": -0.0020169409932358647,
         "n_dof": 15256,
         "n_enriched_dof": 128,
         "n_heaviside_nodes": 32,
         "n_tip_nodes": 8,
-        "solve_seconds": 0.72
+        "solve_seconds": 0.39
       },
       {
         "a_over_b": 0.4,
         "a_mm": 20.000000000000004,
-        "K_I_xfem": 27.747262594301986,
+        "K_I_xfem": 27.74726259430253,
         "K_I_analytical": 27.86834073801644,
-        "error_percent": -0.43446484615886916,
-        "K_II_xfem": -0.004764845127049001,
+        "error_percent": -0.43446484615691866,
+        "K_II_xfem": -0.004764845127229677,
         "n_dof": 15280,
         "n_enriched_dof": 152,
         "n_heaviside_nodes": 44,
         "n_tip_nodes": 8,
-        "solve_seconds": 0.72
+        "solve_seconds": 0.37
       },
       {
         "a_over_b": 0.5,
         "a_mm": 25.0,
-        "K_I_xfem": 33.17239606026564,
+        "K_I_xfem": 33.17239606026645,
         "K_I_analytical": 33.32747717034086,
-        "error_percent": -0.46532508081119967,
-        "K_II_xfem": -0.008578083753537672,
+        "error_percent": -0.46532508080876916,
+        "K_II_xfem": -0.00857808375318511,
         "n_dof": 15304,
         "n_enriched_dof": 176,
         "n_heaviside_nodes": 56,
         "n_tip_nodes": 8,
-        "solve_seconds": 0.73
+        "solve_seconds": 0.39
       }
     ],
-    "worst_error_percent": 0.48157417855172946,
+    "worst_error_percent": 0.48157417854986023,
     "sigma_MPa": 100.0,
     "W": 0.1,
     "aspect_H_over_W": 2.0,
@@ -268,55 +268,55 @@
       {
         "r_factor": 2.0,
         "r_domain_mm": 3.3057851239669422,
-        "K_I": 27.74596260305461,
-        "error_percent": -0.43912960628792075,
+        "K_I": 27.745962603054995,
+        "error_percent": -0.4391296062865439,
         "n_ring_elements": 16
       },
       {
         "r_factor": 3.0,
         "r_domain_mm": 4.958677685950413,
-        "K_I": 27.74726259430214,
-        "error_percent": -0.434464846158321,
+        "K_I": 27.747262594302512,
+        "error_percent": -0.4344648461569824,
         "n_ring_elements": 24
       },
       {
         "r_factor": 4.0,
         "r_domain_mm": 6.6115702479338845,
-        "K_I": 27.746944881753745,
-        "error_percent": -0.43560489447114,
+        "K_I": 27.7469448817541,
+        "error_percent": -0.43560489446986517,
         "n_ring_elements": 32
       },
       {
         "r_factor": 5.0,
         "r_domain_mm": 8.264462809917356,
-        "K_I": 27.745069864109137,
-        "error_percent": -0.442333022500843,
+        "K_I": 27.745069864109634,
+        "error_percent": -0.44233302249905826,
         "n_ring_elements": 40
       }
     ],
-    "domain_spread_MPa_sqrt_m": 0.002192730193002035,
-    "domain_spread_percent_of_K": 0.007868176342522015,
+    "domain_spread_MPa_sqrt_m": 0.00219273019287769,
+    "domain_spread_percent_of_K": 0.007868176342075829,
     "mesh_convergence": [
       {
         "nx": 31,
         "ny": 61,
         "n_dof": 4072,
-        "K_I": 27.666707645316606,
-        "error_percent": -0.72352026478841
+        "K_I": 27.666707645316684,
+        "error_percent": -0.7235202647881296
       },
       {
         "nx": 61,
         "ny": 121,
         "n_dof": 15280,
-        "K_I": 27.74726259430214,
-        "error_percent": -0.434464846158321
+        "K_I": 27.747262594302512,
+        "error_percent": -0.4344648461569824
       },
       {
         "nx": 91,
         "ny": 181,
         "n_dof": 33688,
-        "K_I": 27.774747802511854,
-        "error_percent": -0.33583964106234265
+        "K_I": 27.774747802512103,
+        "error_percent": -0.3358396410614503
       }
     ],
     "converging": true
@@ -362,15 +362,15 @@
     "reference": "Erdogan and Sih maximum circumferential stress criterion. The pure mode II limit is minus 70.5 degrees."
   },
   "epfm": {
-    "J_from_domain_integral": 10455.200103239908,
+    "J_from_domain_integral": 10455.200103240179,
     "J_from_analytical_K": 10624.410608620885,
-    "J_error_percent": -1.5926578105299898,
-    "K_back_from_J": 27.64552635684185,
-    "K_from_interaction_integral": 27.74726259430214,
+    "J_error_percent": -1.5926578105274387,
+    "K_back_from_J": 27.645526356842204,
+    "K_from_interaction_integral": 27.747262594302512,
     "K_analytical": 27.86834073801644,
-    "ctod_theory_m": 3.0304927835477994e-05,
-    "ctod_measured_m": 6.385869066635342e-05,
-    "ctod_ratio_measured_over_theory": 2.1072048418341396,
+    "ctod_theory_m": 3.030492783547878e-05,
+    "ctod_measured_m": 6.385869066635489e-05,
+    "ctod_ratio_measured_over_theory": 2.1072048418341334,
     "ctod_critical_m": 7.246376811594203e-05,
     "jr_curve": {
       "J_IC": 25000.0,
@@ -446,9 +446,9 @@
       },
       {
         "G0_target": 100.0,
-        "G0_recovered": 90.8294328851552,
+        "G0_recovered": 90.82943288515521,
         "G0_continuum_identity": 100.00000000000001,
-        "error_percent": -9.1705671148448,
+        "error_percent": -9.170567114844786,
         "n_crossing_bonds": 21134,
         "delta": 0.09,
         "dx": 0.015,
@@ -458,12 +458,12 @@
     ],
     "horizon_fixed_at": 0.09,
     "G0_target": 100.0,
-    "error_at_finest_m": 9.1705671148448,
+    "error_at_finest_m": 9.170567114844786,
     "errors_by_m": [
       27.636926745127568,
       18.965914998125726,
       18.003749462981204,
-      9.1705671148448
+      9.170567114844786
     ],
     "monotone_improvement": true,
     "continuum_identity_error_fraction": 1.4210854715202004e-16,
@@ -493,7 +493,7 @@
     "crack_advance": 2.025,
     "damaged_node_fraction": 0.0956,
     "threshold": 0.35,
-    "runtime_seconds": 14.0,
+    "runtime_seconds": 22.9,
     "damage_max": 1.0,
     "damaged_fraction": 0.0956,
     "l_ch_m": 0.1875,
@@ -547,7 +547,7 @@
         "profile_L2_error_vs_finest": 0.0
       }
     ],
-    "runtime_seconds": 50.3,
+    "runtime_seconds": 58.6,
     "converging": true,
     "note": "m convergence holds the horizon fixed and refines the grid so that delta over dx grows. The horizon is a material length in peridynamics, so this is the convergence mode the theory is judged on."
   },
@@ -615,7 +615,7 @@
       "material": "CorticalBone_healthy"
     },
     "aerospace/xfem": {
-      "K_I": 21.7237479906241,
+      "K_I": 21.723747990623778,
       "a_c": 0.02204674048911509,
       "theory": "xfem",
       "material": "Al2024-T3"
@@ -876,44 +876,44 @@
           {
             "a_over_b": 0.3,
             "a_mm": 15.0,
-            "K_I_xfem": 22.886723434525436,
+            "K_I_xfem": 22.886723434525866,
             "K_I_analytical": 22.9974733277914,
-            "error_percent": -0.48157417855172946,
-            "K_II_xfem": -0.0020169409930167366,
+            "error_percent": -0.48157417854986023,
+            "K_II_xfem": -0.0020169409932358647,
             "n_dof": 15256,
             "n_enriched_dof": 128,
             "n_heaviside_nodes": 32,
             "n_tip_nodes": 8,
-            "solve_seconds": 0.72
+            "solve_seconds": 0.39
           },
           {
             "a_over_b": 0.4,
             "a_mm": 20.000000000000004,
-            "K_I_xfem": 27.747262594301986,
+            "K_I_xfem": 27.74726259430253,
             "K_I_analytical": 27.86834073801644,
-            "error_percent": -0.43446484615886916,
-            "K_II_xfem": -0.004764845127049001,
+            "error_percent": -0.43446484615691866,
+            "K_II_xfem": -0.004764845127229677,
             "n_dof": 15280,
             "n_enriched_dof": 152,
             "n_heaviside_nodes": 44,
             "n_tip_nodes": 8,
-            "solve_seconds": 0.72
+            "solve_seconds": 0.37
           },
           {
             "a_over_b": 0.5,
             "a_mm": 25.0,
-            "K_I_xfem": 33.17239606026564,
+            "K_I_xfem": 33.17239606026645,
             "K_I_analytical": 33.32747717034086,
-            "error_percent": -0.46532508081119967,
-            "K_II_xfem": -0.008578083753537672,
+            "error_percent": -0.46532508080876916,
+            "K_II_xfem": -0.00857808375318511,
             "n_dof": 15304,
             "n_enriched_dof": 176,
             "n_heaviside_nodes": 56,
             "n_tip_nodes": 8,
-            "solve_seconds": 0.73
+            "solve_seconds": 0.39
           }
         ],
-        "worst_error_percent": 0.48157417855172946,
+        "worst_error_percent": 0.48157417854986023,
         "sigma_MPa": 100.0,
         "W": 0.1,
         "aspect_H_over_W": 2.0,
@@ -930,55 +930,55 @@
           {
             "r_factor": 2.0,
             "r_domain_mm": 3.3057851239669422,
-            "K_I": 27.74596260305461,
-            "error_percent": -0.43912960628792075,
+            "K_I": 27.745962603054995,
+            "error_percent": -0.4391296062865439,
             "n_ring_elements": 16
           },
           {
             "r_factor": 3.0,
             "r_domain_mm": 4.958677685950413,
-            "K_I": 27.74726259430214,
-            "error_percent": -0.434464846158321,
+            "K_I": 27.747262594302512,
+            "error_percent": -0.4344648461569824,
             "n_ring_elements": 24
           },
           {
             "r_factor": 4.0,
             "r_domain_mm": 6.6115702479338845,
-            "K_I": 27.746944881753745,
-            "error_percent": -0.43560489447114,
+            "K_I": 27.7469448817541,
+            "error_percent": -0.43560489446986517,
             "n_ring_elements": 32
           },
           {
             "r_factor": 5.0,
             "r_domain_mm": 8.264462809917356,
-            "K_I": 27.745069864109137,
-            "error_percent": -0.442333022500843,
+            "K_I": 27.745069864109634,
+            "error_percent": -0.44233302249905826,
             "n_ring_elements": 40
           }
         ],
-        "domain_spread_MPa_sqrt_m": 0.002192730193002035,
-        "domain_spread_percent_of_K": 0.007868176342522015,
+        "domain_spread_MPa_sqrt_m": 0.00219273019287769,
+        "domain_spread_percent_of_K": 0.007868176342075829,
         "mesh_convergence": [
           {
             "nx": 31,
             "ny": 61,
             "n_dof": 4072,
-            "K_I": 27.666707645316606,
-            "error_percent": -0.72352026478841
+            "K_I": 27.666707645316684,
+            "error_percent": -0.7235202647881296
           },
           {
             "nx": 61,
             "ny": 121,
             "n_dof": 15280,
-            "K_I": 27.74726259430214,
-            "error_percent": -0.434464846158321
+            "K_I": 27.747262594302512,
+            "error_percent": -0.4344648461569824
           },
           {
             "nx": 91,
             "ny": 181,
             "n_dof": 33688,
-            "K_I": 27.774747802511854,
-            "error_percent": -0.33583964106234265
+            "K_I": 27.774747802512103,
+            "error_percent": -0.3358396410614503
           }
         ],
         "converging": true
@@ -1034,15 +1034,15 @@
       "passed": true,
       "target": "under 3 percent",
       "detail": {
-        "J_from_domain_integral": 10455.200103239908,
+        "J_from_domain_integral": 10455.200103240179,
         "J_from_analytical_K": 10624.410608620885,
-        "J_error_percent": -1.5926578105299898,
-        "K_back_from_J": 27.64552635684185,
-        "K_from_interaction_integral": 27.74726259430214,
+        "J_error_percent": -1.5926578105274387,
+        "K_back_from_J": 27.645526356842204,
+        "K_from_interaction_integral": 27.747262594302512,
         "K_analytical": 27.86834073801644,
-        "ctod_theory_m": 3.0304927835477994e-05,
-        "ctod_measured_m": 6.385869066635342e-05,
-        "ctod_ratio_measured_over_theory": 2.1072048418341396,
+        "ctod_theory_m": 3.030492783547878e-05,
+        "ctod_measured_m": 6.385869066635489e-05,
+        "ctod_ratio_measured_over_theory": 2.1072048418341334,
         "ctod_critical_m": 7.246376811594203e-05,
         "jr_curve": {
           "J_IC": 25000.0,
@@ -1087,9 +1087,9 @@
       "passed": true,
       "target": "same order of magnitude",
       "detail": {
-        "ctod_theory_m": 3.0304927835477994e-05,
-        "ctod_measured_m": 6.385869066635342e-05,
-        "ratio": 2.1072048418341396
+        "ctod_theory_m": 3.030492783547878e-05,
+        "ctod_measured_m": 6.385869066635489e-05,
+        "ratio": 2.1072048418341334
       }
     },
     {
@@ -1133,9 +1133,9 @@
           },
           {
             "G0_target": 100.0,
-            "G0_recovered": 90.8294328851552,
+            "G0_recovered": 90.82943288515521,
             "G0_continuum_identity": 100.00000000000001,
-            "error_percent": -9.1705671148448,
+            "error_percent": -9.170567114844786,
             "n_crossing_bonds": 21134,
             "delta": 0.09,
             "dx": 0.015,
@@ -1145,12 +1145,12 @@
         ],
         "horizon_fixed_at": 0.09,
         "G0_target": 100.0,
-        "error_at_finest_m": 9.1705671148448,
+        "error_at_finest_m": 9.170567114844786,
         "errors_by_m": [
           27.636926745127568,
           18.965914998125726,
           18.003749462981204,
-          9.1705671148448
+          9.170567114844786
         ],
         "monotone_improvement": true,
         "continuum_identity_error_fraction": 1.4210854715202004e-16,
@@ -1185,7 +1185,7 @@
         "crack_advance": 2.025,
         "damaged_node_fraction": 0.0956,
         "threshold": 0.35,
-        "runtime_seconds": 14.0,
+        "runtime_seconds": 22.9,
         "damage_max": 1.0,
         "damaged_fraction": 0.0956,
         "l_ch_m": 0.1875,
@@ -1244,7 +1244,7 @@
             "profile_L2_error_vs_finest": 0.0
           }
         ],
-        "runtime_seconds": 50.3,
+        "runtime_seconds": 58.6,
         "converging": true,
         "note": "m convergence holds the horizon fixed and refines the grid so that delta over dx grows. The horizon is a material length in peridynamics, so this is the convergence mode the theory is judged on."
       }
@@ -1322,7 +1322,7 @@
           "material": "CorticalBone_healthy"
         },
         "aerospace/xfem": {
-          "K_I": 21.7237479906241,
+          "K_I": 21.723747990623778,
           "a_c": 0.02204674048911509,
           "theory": "xfem",
           "material": "Al2024-T3"
@@ -1347,12 +1347,12 @@
     "checks_passed": 14,
     "checks_failed": 0,
     "all_passed": true,
-    "runtime_seconds": 74.1,
+    "runtime_seconds": 87.5,
     "headline": {
-      "xfem_worst_error_percent_vs_analytical": 0.48157417855172946,
+      "xfem_worst_error_percent_vs_analytical": 0.48157417854986023,
       "lefm_integrator_worst_error_percent": 2.6353387115356496e-12,
-      "epfm_J_error_percent": -1.5926578105299898,
-      "peridynamic_G0_error_percent_at_finest_m": 9.1705671148448,
+      "epfm_J_error_percent": -1.5926578105274387,
+      "peridynamic_G0_error_percent_at_finest_m": 9.170567114844786,
       "peridynamic_crack_advance_m": 2.025,
       "peridynamic_branched": true
     }

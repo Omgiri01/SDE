@@ -102,13 +102,13 @@ def _sync_train(target_tickers):
 
 
 @router.post("/train")
-async def train_all_models(tickers: Optional[List[str]] = None):
+async def train_all_models():
     """
     Train all 5 AI/ML models on historical data.
     Runs in a worker thread via asyncio.to_thread so the event loop stays 100% responsive.
     """
     import asyncio
-    target_tickers = tickers or TICKERS[:4]
+    target_tickers = TICKERS[:4]  # AAPL, TSLA, MSFT, NVDA
     results = await asyncio.to_thread(_sync_train, target_tickers)
 
     return {
