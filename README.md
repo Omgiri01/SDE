@@ -117,6 +117,7 @@ In addition to the systems hosted directly in this repository, the following sta
 | **Spherical Robot Workspace Simulator** | Standard DH forward kinematics, 3D polygonal Matplotlib visualizer, and workspace boundary sweep datasets. | `Python`, `NumPy`, `Matplotlib`, `JSON` | [🔗 View Project](https://github.com/Omgiri01/spherical-robot-workspace) |
 | **Robotics Manipulator Kinematics** | 2-DOF planar trajectory inverse kinematics solver + 6-DOF industrial DH forward kinematics GUI dashboard. | `Python`, `NumPy`, `Matplotlib`, `Tkinter` | [🔗 View Project](https://github.com/Omgiri01/robotics-manipulator-kinematics) |
 | **Biometric Attendance System** | Real-time face detection, anti-spoofing liveness verification, DeepFace embeddings, and SQLite logging. | `OpenCV`, `DeepFace`, `SQLite`, `pyttsx3` | [🔗 View Project](https://github.com/Omgiri01/face-detection-attendance-system) |
+| **Brayton Cycle Efficiency Analysis** | Computational thermodynamics & turbomachinery modeling of gas turbine thermal efficiency vs. pressure ratio. | Python, NumPy, Matplotlib | [🔗 View Project](https://github.com/Omgiri01/brayton-cycle-efficiency-analysis) |
 
 ---
 
