@@ -75,7 +75,7 @@ Beyond the core full-stack platforms in this repository, here are companion spec
 | **Robotics Manipulator Kinematics** | 2-DOF Planar Trajectory Planning & 6-DOF Industrial Forward Kinematics Dashboard | Python, NumPy, Matplotlib, Tkinter | [View Repo ↗](https://github.com/Omgiri01/robotics-manipulator-kinematics) |
 | **Spherical Robot Workspace** | 3-DOF Spherical Manipulator (R-R-P) Denavit–Hartenberg Kinematics & 3D Volumetric Modeler | Python, NumPy, Matplotlib, JSON Datasets | [View Repo ↗](https://github.com/Omgiri01/spherical-robot-workspace) |
 | **Spherical Robot Unity Simulator** | Real-Time 3D Kinematics Simulation, Virtual Touch Joysticks & Trajectory Tracing (Windows & Android) | Unity 2022.3 LTS, C#, URP, Input System | [View Repo ↗](https://github.com/Omgiri01/spherical-robot-unity) |
-| **Industrial Defect Detection** | Mechanical Transmission (Gear & Bearing) & Surface Quality Fault Detection | PyTorch, ResNet-50, STFT Spectrograms, Scikit-Learn | [View Repo ↗](https://github.com/Omgiri01/industrial-defect-detection-computer-vision) |
+| **Defect Detection of Gear & Bearing (ML)** | Mechanical Transmission (Gear & Bearing) & Surface Quality Fault Detection | PyTorch, ResNet-50, STFT Spectrograms, Scikit-Learn | [View Repo ↗](https://github.com/Omgiri01/defect-detection-of-gear-and-bearing-using-ML) |
 | **Biometric Attendance System** | Real-Time Face Detection, Anti-Spoofing Liveness Verification & Database Logging | OpenCV, DeepFace, SQLite, pyttsx3 | [View Repo ↗](https://github.com/Omgiri01/face-detection-attendance-system) |
 
 ---
